@@ -1,0 +1,76 @@
+<div class="header">
+    <nav>
+        <div class="logo">
+            <img src="assets\logo.png" width="75px">
+
+            <span>Voizfonica</span>
+        </div>
+        <ul>
+            <li><a href="\home">Home</a></li>
+            <li><a href="\prepaid">Prepaid</a></li>
+            <li><a href="\postpaid">Postpaid</a></li>
+            <li><a href="\dongle">Dongle</a></li>
+            <li><a href="\support">Support</a></li>
+        </ul>
+    </nav>
+    <h2>Choose Your  Prepaid Plan.</h2>
+    <p>TALK UNLIMITED<br>Our best plans,our best prices,<br>on the best network.</p>
+    <!-- <a><img src="plans_page.png"></a> -->
+    <div class="price-row">
+        <div class="price-col">
+            <p>Starter</p>
+            <h3> 839 /-</h3>
+            <ul>
+                <li>Ulimited Calls</li>
+                <li>2GB/Day</li>
+                <li>Disney+Hotstar For 3 Months</li>
+                <li>84 Days Validity</li>
+            </ul>
+            <button (click)="initializePayment(839)" (click)="gotoList1()">Buy</button>
+        </div>
+        <div class="price-col">
+            <p>Pro</p>
+            <h3>2999/-</h3>
+            <ul>
+                <li>Unlimited Calls</li>
+                <li>2GB/Day</li>
+                <li>Apollo 24|7 Cricle</li>
+                <li>365 Days Validity</li>
+            </ul>
+            <button (click)="initializePayment(2999)" (click)="gotoList2()">Buy</button>
+        </div>
+        <div class="price-col">
+            <p>Premium</p>
+            <h3>3359/-</h3>
+            <ul>
+                <li>Unlimited Calls</li>
+                <li>2.5GB/Day</li>
+                <li>Disney+Hotstar For 1 Year</li>
+                <li>365 Days Validity</li>
+            </ul>
+            <button (click)="initializePayment(3599)" (click)="gotoList3()">Buy</button>
+            <!-- <button (click)="gotoList()">invoice</button> -->
+        </div>
+    </div>
+
+</div>
+
+<!-- for email (if we use form another slide bar will be there)-->
+
+
+
+<!-- <form [formGroup]="email" >
+
+    <div class="container">
+
+          <h1>To send invoice</h1>
+
+          <label><b>Email: </b></label>
+
+          <input type="text" formControlName="emailsend" placeholder="Type your Email" name="First name " required>
+
+          <button (click)="sendmail()">email</button>
+
+    </div>
+
+</form> -->

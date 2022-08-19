@@ -1,0 +1,56 @@
+<div class="header">
+    <nav>
+        <div class="logo">
+            <img src="assets\logo.png" width="75px">
+
+            <span>Voizfonica</span>
+        </div>
+        <ul>
+            <li><a href="\home">Home</a></li>
+            <li><a href="\prepaid">Prepaid</a></li>
+            <li><a href="\postpaid">Postpaid</a></li>
+            <li><a href="\dongle">Dongle</a></li>
+            <li><a href="\support">Support</a></li>
+        </ul>
+    </nav>
+    <h2>Choose Your  Postpaid Plan.</h2>
+    <p>TALK UNLIMITED<br>Our best plans,our best prices,<br>on the best network.</p>
+    <!-- <a><img src="plans_page.png"></a> -->
+    <div class="price-row">
+        <div class="price-col">
+            <p>Monthly Rental of<br>499/-</p>
+            <h6>1 Regular</h6>
+            <ul>
+                <li>Data with Rollover 75 GB</li>
+                <li>SMS Per Day 100</li>
+                <li>Local/STD & Roaming Calls</li>
+                <li>Amazon Prime</li>
+            </ul>
+            <button (click)="initializePayment(3599)" (click)="gotoList1()">Buy</button>
+        </div>
+        <div class="price-col">
+            <p>Monthly Rental of<br>1199/-</p>
+            <h6>1 Regular + 2 Free add-on</h6>
+            <ul>
+                <li>Data with Rollover 100 GB</li>
+                <li>SMS Per Day 100</li>
+                <li>Local/STD & Roaming Calls</li>
+                <li>Amazon Prime</li>
+            </ul>
+            <button (click)="initializePayment(3599)" (click)="gotoList2()">Buy</button>
+        </div>
+        <div class="price-col">
+            <p>Monthly Rental of<br>1599/-</p>
+            <h6>1 Regular + 3 Free add-on</h6>
+            <ul>
+                <li>Data with Rollover 250 GB</li>
+                <li>SMS Per Day 100</li>
+                <li>Local/STD & Roaming Calls</li>
+                <li>Prime, Netflix and Hostar</li>
+            </ul>
+            <button (click)="initializePayment(3599)" (click)="gotoList3()">Buy</button>
+        </div>
+    </div>
+
+</div>
+

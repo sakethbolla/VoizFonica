@@ -1,0 +1,56 @@
+<div class="header">
+    <nav>
+        <div class="logo">
+            <img src="assets\logo.png" width="75px">
+
+            <span>Voizfonica</span>
+        </div>
+        <ul>
+            <li><a href="\home">Home</a></li>
+            <li><a href="\prepaid">Prepaid</a></li>
+            <li><a href="\postpaid">Postpaid</a></li>
+            <li><a href="\dongle">Dongle</a></li>
+            <li><a href="\support">Support</a></li>
+        </ul>
+    </nav>
+    <h2>Choose Your  Broadband Plan.</h2>
+    <p>WATCH UNLIMATED<br>Best Weekend  Entertainment,<br>our best prices,on the best network.</p>
+    <!-- <a><img src="plans_page.png"></a> -->
+    <div class="price-row">
+        <div class="price-col">
+            <p>Basic</p>
+            <h6>Monthly Rental<br>499/-</h6>
+            <ul>
+                <li>Unlimated Internet</li>
+                <li>Up to 40Mbps</li>
+                <li>Local/STD & Roaming Calls</li>
+                <li>Wynk and Apollo</li>
+            </ul>
+            <button (click)="initializePayment(3599)" (click)="gotoList1()">Buy</button>
+        </div>
+        <div class="price-col">
+            <p>Basic+TV</p>
+            <h6>Monthly Rental<br>699/-</h6>
+            <ul>
+                <li>Unlimated Internet</li>
+                <li>Up to 40Mbps</li>
+                <li>Local/STD & Roaming Calls</li>
+                <li>Hotstar</li>
+            </ul>
+            <button (click)="initializePayment(3599)" (click)="gotoList2()">Buy</button>
+        </div>
+        <div class="price-col">
+            <p>Entertainment</p>
+            <h6>Monthly Rental<br>999/-</h6>
+            <ul>
+                <li>Unlimated Internet</li>
+                <li>Up to 200Mbps</li>
+                <li>Local/STD & Roaming Calls</li>
+                <li>Prime, Hotstar and Netflix</li>
+            </ul>
+            <button (click)="initializePayment(3599)" (click)="gotoList3()">Buy</button>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,37 @@
+<body>
+    <div class="center">
+        <h1>Signup</h1>
+        <form [formGroup]="form" (ngSubmit)="signup()">
+            <div class="text_field">
+                <input ngModel name="username" type="text" formControlName="username" required minlength="3" >
+                <div *ngIf=" f['username'].touched" class="text-danger">
+                    <div *ngIf="f['username'].invalid">Minimum of 3 characters</div>
+                    </div>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="text_field">
+                <input ngModel name="email" type="text" formControlName="email" required pattern="[^ @]*@[^ @]*">
+                <div *ngIf=" f['email'].touched" class="text-danger">
+                    <div *ngIf="f['email'].invalid">Must be in E-mail format</div>
+                    </div>
+                <span></span>
+                <label>E-mail</label>
+            </div>
+            <div class="text_field">
+                <input  name="password" type="password" formControlName="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> 
+                <!-- <div *ngIf=" f['password'].touched" class="text-danger">
+                    <div *ngIf="f['password'].invalid">Password must contain one uppercase,lowercase and number</div>
+                    </div> -->
+                <span></span>
+                <label>Password</label>
+            </div> 
+            <button type="submit" id="signup" ><b>signup</b></button>
+
+            <div class="Signup_link">
+                Already a member?<a href="\login">Login</a>
+            </div><br>
+
+        </form>
+    </div>
+</body>

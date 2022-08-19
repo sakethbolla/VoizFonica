@@ -1,0 +1,58 @@
+<div id="hi">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <!-- <form action="action_page.php" method="post"> -->
+    <div class="container" class="text-center"><br><br>
+      <div class="contact-form">
+        <h1>Admin Login</h1>
+      </div>
+      <label for="name"><b>Username</b></label>
+      <input class="text-center" type="text" name="name" required formControlName="name" minlength="3"><br>
+      <div *ngIf=" f['name'].touched" class="text-danger">
+        <div *ngIf="f['name'].invalid">Username is required</div>
+        </div>
+      <label for="password"><b>Password</b></label>
+      <input class="text-center" type="password" name="password" required formControlName="password"><br><br>
+      <button class="a" type="submit" onclick="">Login</button><br><br>
+      <label>
+        <input type="checkbox" name="remember"> Remember me
+      </label><br><br><br>
+    </div>
+  </form>
+  
+  <div class="center">
+  <button type="button" (click)="deleteUser(3)">Delete specfic user by ID</button>
+  &nbsp;
+  <button type="button" class="cancelbtn">Display one record</button>
+  &nbsp;
+  <button type="button" (click)="getAllUsers()">Get All Users</button>
+  &nbsp;
+  &nbsp;
+  <br><br><br>
+  </div>
+  <table id="customers">
+  <!-- <tr *ngFor="let user of users"> 
+    <td><p style="color:blue ;">id </p>{{user.id}}</td>&nbsp;&nbsp;
+    <td><p style="color:blue ;">Name </p>{{user.name}}</td>&nbsp; &nbsp;&nbsp;
+    <td><p style="color:blue ;">Password </p> {{user.password}}</td>&nbsp;
+    <td><p style="color:blue ;">E-mail </p> {{user.email}}</td>&nbsp;
+    <td><p style="color:blue ;">OTP </p> {{user.otp}}</td>&nbsp;
+    <button style="color:black ;" type="submit" (click)="deleteUser(user.id)">Delete Card</button>
+  </tr> -->
+  <table>
+    <th>id</th>
+    <th>Name</th>
+    <th>email</th>
+    <th>Mobile</th>
+    <th>Delete </th><br>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.mobile}}</td>
+      <button style="color:black ;" type="submit" (click)="deleteUser(user.id)">Delete Card</button>
+    </tr>
+  </table>
+
+  
+  </table>
+  </div>

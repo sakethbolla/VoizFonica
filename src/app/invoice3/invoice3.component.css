@@ -1,0 +1,31 @@
+.invoice-title h2, .invoice-title h3 {
+    color: rgb(61, 112, 194);
+    display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+    color: rgb(61, 112, 194);
+    border-top: none;
+}
+
+.table > thead > tr > .no-line {
+    
+    border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+    color: rgb(61, 112, 194);
+    border-top: 2px solid;
+}
+#signup {
+    background-color:rgb(61, 112, 194);
+    border-radius: 5px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+    height: 30px;
+    color:black;
+}
