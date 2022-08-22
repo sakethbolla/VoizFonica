@@ -1,0 +1,21 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: login-service
+
+eureka:
+  instance:
+    hostname: localhost
+    cloud:
+    gateway:
+      routes:
+        - id: login-service
+          uri: lb://login-service
+          predicates:
+            - Path=/login/**
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=/order/**
