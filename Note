@@ -1,0 +1,6 @@
+1. Do you have angular in your pc? Download it first.
+
+2. Download the whole code zip file -> unzip and add NODE_MODULES from another angular project or create one angular project and add these files.
+Done you are good to go with Front-end.
+
+3. Lets use eclipse workspace for backend. download if you dont have and unzip the eclipse folder. and run each microservices file.
