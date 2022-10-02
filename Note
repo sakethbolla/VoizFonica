@@ -3,4 +3,4 @@
 2. Download the whole code zip file -> unzip and add NODE_MODULES from another angular project or create one angular project and add these files.
 Done you are good to go with Front-end.
 
-3. Lets use eclipse workspace for backend. download if you dont have and unzip the eclipse folder. and run each microservices file.
+3. Lets use eclipse workspace for backend. download if you dont have and unzip the voizfonica_eclipse. and run each microservices file.
